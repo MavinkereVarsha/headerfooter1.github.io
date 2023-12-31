@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(161, 24, 24, 0.185);
+            color: black;
+            padding: 0px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        #logo1{
+            width: 110px;
+            height: 60PX;
+            margin-right: 10px;
+        }
+        select{
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: gray;
+            color: black;
+            padding: 0px;
+            text-align: left;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        main {
+            padding: 20px;
+        }
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+        
+        input{
+            height: 18px;
+            padding: 4px; 
+            border: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border: 2px solid gray;
+        }
+        h1{
+            background-color: rgb(167, 240, 167);
+            border-radius:150px;
+            padding: 8px; 
+            font-size: 22px;
+            margin: 10px; 
+            font-weight: lighter;
+            /* margin-left: auto; */
+        }
+        h2{
+            background-color: rgb(167, 240, 167);
+            border-radius:150px;
+            padding: 8px; 
+            font-size: 22px;
+            /* margin: 10px; */
+            font-weight: lighter;
+           margin-left: auto;
+        }
+
+        #footer-logo1{
+            width: 110px;
+            height: 60PX;
+            margin-right: 10px;
+        }
+        
+        .hover-container {
+  position: relative;
+}
+
+/* Styles for the hidden list */
+.hidden-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  list-style: none;
+  margin: 0;
+}
+
+/* Styles for list items in the hidden list */
+.hidden-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Highlight the list item on hover */
+.hidden-list li:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* footer: */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: gray;
+  color: #fff;
+}
+
+/* Styles for the left section (logo/image) */
+.footer-left img {
+  width: 110px; /* Adjust the width as needed */
+}
+
+/* Styles for the middle section (menu) */
+.footer-middle ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-middle li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-middle a {
+  text-decoration: none;
+  color:black;
+}
+
+/* Styles for the right section (social icons) */
+.footer-right a {
+  margin-left: 10px;
+}
+
+.footer-right img {
+  width: 20px; /* Adjust the width as needed */
+  
+}
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="logo1" class="logo" src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\logo-dark.png" alt="Logo1">
+       
+        <div class="hover-container" onmouseover="showList()" onmouseout="hideList()">
+            <p><b>Tutorials</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <ul class="hidden-list" id="dataList">
+              <li>HTML&CSS</li>
+              <li>JACA SCRIPT</li>
+              <li>BACK END</li>
+              <li>WEB BUILDING</li>
+              <li>DATA ANALYST</li>
+            </ul>
+          </div>
+        
+          <script>
+            function showList() {
+              document.getElementById('dataList').style.display = 'block';
+            }
+        
+            function hideList() {
+              document.getElementById('dataList').style.display = 'none';
+            }
+          </script>
+       
+        <select id="dropdown"> 
+            <option value="optioSn1">Exercise</option>
+            <option value="option3">HTML&CSS</option>
+            <option value="option2">JAVA SCRIPT</option>
+            <option value="option3">BACK END</option>
+            <option value="option3">DATA ANALYST</option>
+        </select>
+
+        <select id="dropdown"> 
+            <option value="optioSn1">Certificates</option>
+            <option value="option3">HTML&CSS</option>
+            <option value="option3">JAVA SCRIPT</option>
+            <option value="option2">BACK END</option>
+            <option value="option2">PROGRAMS</option>
+            <option value="option3">DATA ANALYST</option>
+        </select>
+
+        <select id="dropdown"> 
+            <option value="optioSn1">Services</option>
+            <option value="option3">Free Tutorials</option>
+            <option value="option2">References</option>
+            <option value="option3">Create a WebPage</option>
+            <option value="option3">Exercise</option>
+            <option value="option2">Quize</option>
+            <option value="option3">Get Certificate</option>
+        </select>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="textInput" placeholder="search..">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h1>Sign Up</h1>
+        <h2>Log In</h2>
+        <main>
+            
+    </header>
+
+    
+    </main>
+
+    <footer>
+        
+        <div class="footer-container">
+            <div class="footer-left">
+              <img src="c:\Users\User\Desktop\JSpiders\FrontEnd\Image\logo-dark.png" alt="Logo">
+            </div>
+            <div >
+                <p><b><u>INFLUENCER LABS</u></b><br><br>
+                    ADDRESS : No.435 18th Cross, Jayanagar 1st & 3rd Block East Bangalore 560011</p>
+              <ul>
+                <li><a href="https://influencerlabs.in/index.html">HOME</a></li>
+                <li><a href="https://influencerlabs.in/about.html">ABOUT US</a></li>
+                <li><a href="https://influencerlabs.in/about.html#">SERVICES</a></li>
+                <li><a href="https://influencerlabs.in/contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+
+            <div >
+                <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>OUR SERVICES</u></b></p>
+              <ul>
+                <li>Product, Platform, & Practice Engineering</li>
+                <li>Data & Artificial Intelligence</li>
+                <li>IT Infrastructure Management Services</li>
+                <li>Data Analytics</li>
+                <li>Placement Services</li>
+              </ul>
+            </div>
+
+            <div >
+                <br><br><br>
+                <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>COURSES</u></b></p>
+              <ul>
+                <li>Data Science Courses</li>
+                <li>Data & Artificial Intelligence</li>
+                <li>Digital Marketing Courses</li>
+                <li>Software Engineering Courses</li>
+                <li>Cloud Computing Courses</li>
+                <li>Design Courses</li>
+                <li>Cyber Security Courses</li>
+                <li>Management Courses</li>
+                <li>Study Abroad Programs</li>
+                <li>Job Opportunity Programs</li>
+              </ul>
+            </div>
+
+            <div >
+                <a href="https://www.facebook.com"><img src="http://clipart-library.com/new_gallery/377-3776210_facebook-logo-vector-logovectornet-logo-facebook-2019-png.png" alt="description of the image" width="50px" height="50px"><br>
+                <a href="https://www.twitter.com"><img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="description of the image" width="50px" height="50px"><br>
+                <a href="https://www.instagram.com"><img src="http://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="description of the image" width="50px" height="50px">
+            </div>
+          </div>
+    </footer>
+
+</body>
+</html>
